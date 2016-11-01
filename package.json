@@ -1,0 +1,27 @@
+{
+  "name": "angular2practices",
+  "version": "1.0.0",
+  "description": "Angular2 Practices Source Code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HalZhan/angular2practices.git"
+  },
+  "keywords": [
+    "angular2",
+    "typescript",
+    "webpack"
+  ],
+  "author": "halzhan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HalZhan/angular2practices/issues"
+  },
+  "homepage": "https://github.com/HalZhan/angular2practices#readme",
+  "devDependencies": {
+    "webpack": "^1.13.3"
+  }
+}
