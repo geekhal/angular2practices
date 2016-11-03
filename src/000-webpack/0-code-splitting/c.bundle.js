@@ -58,7 +58,7 @@
 	    'use strict';
 	    var exports = {};
 	    exports.method = function() {
-	        console.log('I\'m a');
+	        document.write("I'm Module A!<br>");
 	    };
 	    return exports;
 	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -71,7 +71,7 @@
 	    'use strict';
 	    var exports = {};
 	    exports.method = function() {
-	        console.log('I\'m b');
+	        document.write("I'm Module B!<br>");
 	    };
 	    return exports;
 	}.call(exports, __webpack_require__, exports, module), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
