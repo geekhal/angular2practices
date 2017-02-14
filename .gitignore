@@ -38,3 +38,5 @@ jspm_packages
 
 # Personal Ignore
 src/**/build
+src/**/dist
+.vscode
