@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/HalZhan/angular2practices#readme",
   "devDependencies": {
+    "@angular/compiler-cli": "^2.4.7",
+    "@angular/platform-server": "^2.4.7",
     "@types/node": "^0.0.3",
     "angular2-template-loader": "^0.6.0",
     "awesome-typescript-loader": "^3.0.0-beta.14",
