@@ -52,6 +52,7 @@
     "@angular/platform-browser": "^2.3.0",
     "@angular/platform-browser-dynamic": "^2.3.0",
     "@angular/router": "^3.3.0",
+    "angular-in-memory-web-api": "^0.2.4",
     "babel-polyfill": "^6.20.0",
     "core-js": "^2.4.1",
     "jquery": "^3.1.1",
