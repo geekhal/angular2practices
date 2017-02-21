@@ -1,26 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule }       from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
 
-import { ContactModule } from './contact/contact.module';
+/* App Root */
+import { AppComponent }   from './app.component';
 
-import { AppComponent } from './app.component';
-import { TitleComponent } from './title.component';
+/* Feature Modules */
+import { ContactModule }    from './contact/contact.module';
+import { CoreModule }       from './core/core.module';
 
-import { UserService } from './user.service';
+/* Routing Module */
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   imports: [
     BrowserModule,
-    ContactModule
+    ContactModule,
+/*
+    CoreModule,
+*/
+    CoreModule.forRoot({userName: 'Miss Marple'}),
+    AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-    TitleComponent
-  ],
-  providers: [
-    UserService
-  ],
-  bootstrap: [AppComponent]
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
 })
-
 export class AppModule { }
