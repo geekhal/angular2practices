@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero,
-         HeroService } from './hero.service';
+import { Hero, HeroesService } from './heroes.service';
 
 @Component({
   template: `
@@ -11,9 +10,9 @@ import { Hero,
     </div>
   `
 })
-export class HeroListComponent implements OnInit {
+export class HeroesListComponent implements OnInit {
   heroes: Promise<Hero[]>;
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroesService) { }
 
   ngOnInit() {
     this.heroes = this.heroService.getHeroes();

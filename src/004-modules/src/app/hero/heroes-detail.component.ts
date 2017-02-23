@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute }    from '@angular/router';
 
 import { Hero,
-         HeroService }    from './hero.service';
+         HeroesService }    from './heroes.service';
 
 @Component({
   template: `
@@ -17,15 +17,15 @@ import { Hero,
     <a routerLink="../">Hero List</a>
   `
 })
-export class HeroDetailComponent implements OnInit {
+export class HeroesDetailComponent implements OnInit {
   hero: Hero;
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: HeroService) { }
+    private heroesService: HeroesService) { }
 
   ngOnInit() {
     let id = parseInt(this.route.snapshot.params['id'], 10);
-    this.heroService.getHero(id).then(hero => this.hero = hero);
+    this.heroesService.getHero(id).then(heroes => this.hero = heroes);
   }
 }

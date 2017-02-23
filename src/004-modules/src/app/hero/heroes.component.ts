@@ -1,7 +1,7 @@
 // Exact copy except import UserService from core
 import { Component }   from '@angular/core';
 
-import { HeroService } from './hero.service';
+import { HeroesService } from './heroes.service';
 import { UserService } from '../core/user.service';
 
 @Component({
@@ -9,9 +9,9 @@ import { UserService } from '../core/user.service';
     <h2>Heroes of {{userName}}</h2>
     <router-outlet></router-outlet>
   `,
-  providers: [ HeroService ]
+  providers: [ HeroesService ]
 })
-export class HeroComponent {
+export class HeroesComponent {
   userName = '';
   constructor(userService: UserService) {
     this.userName = userService.userName;

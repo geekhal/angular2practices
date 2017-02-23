@@ -16,7 +16,7 @@ const HEROES: Hero[] = [
 const FETCH_LATENCY = 500;
 
 @Injectable()
-export class HeroService {
+export class HeroesService {
 
   getHeroes() {
     return new Promise<Hero[]>(resolve => {
