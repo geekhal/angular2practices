@@ -37,6 +37,9 @@ jspm_packages
 .node_repl_history
 
 # Personal Ignore
-src/**/build
-src/**/dist
+projects/**/build
+projects/**/dist
 .vscode
+src
+dist
+build
