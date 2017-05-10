@@ -11,10 +11,6 @@
       "dom"
     ],
     "noImplicitAny": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "exclude": [
-      "node_modules",
-      "dist"
-    ]
+    "suppressImplicitAnyIndexErrors": true
   }
 }
